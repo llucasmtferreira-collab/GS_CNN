@@ -1,0 +1,124 @@
+{
+  "projeto": "Segurança Pública Inteligente - Roubo x Furto",
+  "fonte": "https://www.ssp.sp.gov.br/estatistica/consultas",
+  "arquivo_utilizado": "ocorrencias_capital_2025.csv",
+  "recorte": "Município de São Paulo; fatos de 2025; FURTO - OUTROS e ROUBO - OUTROS",
+  "atributos": [
+    "bairro",
+    "periodo",
+    "tipo_local",
+    "dia_semana"
+  ],
+  "categorias": {
+    "bairro": [
+      "BARRA FUNDA",
+      "BELA VISTA",
+      "BOM RETIRO",
+      "BRAS",
+      "BUTANTA",
+      "CAMPO LIMPO",
+      "CAPAO REDONDO",
+      "CIDADE ADEMAR",
+      "CIDADE DUTRA",
+      "CONSOLACAO",
+      "GRAJAU",
+      "GUAIANASES",
+      "IPIRANGA",
+      "ITAIM BIBI",
+      "ITAIM PAULISTA",
+      "ITAQUERA",
+      "JABAQUARA",
+      "JARDIM PAULISTA",
+      "JD SAO LUIS",
+      "LAPA",
+      "LIBERDADE",
+      "MOEMA",
+      "MOOCA",
+      "NAO INFORMADO",
+      "OUTROS",
+      "PERDIZES",
+      "PINHEIROS",
+      "REPUBLICA",
+      "SANTA CECILIA",
+      "SANTANA",
+      "SANTO AMARO",
+      "SE",
+      "TATUAPE",
+      "VILA ANDRADE",
+      "VILA GUILHERME",
+      "VILA MARIA",
+      "VILA MARIANA"
+    ],
+    "periodo": [
+      "A NOITE",
+      "A TARDE",
+      "DE MADRUGADA",
+      "EM HORA INCERTA",
+      "NAO INFORMADO",
+      "PELA MANHA"
+    ],
+    "tipo_local": [
+      "AREA NAO OCUPADA",
+      "COMERCIO E SERVICOS",
+      "CONDOMINIO COMERCIAL",
+      "CONDOMINIO RESIDENCIAL",
+      "ENTIDADE ASSISTENCIAL",
+      "ESTABELECIMENTO BANCARIO",
+      "ESTACIONAMENTO/GARAGEM",
+      "LAZER E RECREACAO",
+      "OUTROS",
+      "RESIDENCIA",
+      "RESTAURANTE E AFINS",
+      "RODOVIA/ESTRADA",
+      "SHOPPING CENTER",
+      "TERMINAL/ESTACAO",
+      "VIA PUBLICA"
+    ],
+    "dia_semana": [
+      "DOMINGO",
+      "QUARTA",
+      "QUINTA",
+      "SABADO",
+      "SEGUNDA",
+      "SEXTA",
+      "TERCA"
+    ]
+  },
+  "classe_0": "Furto",
+  "classe_1": "Roubo",
+  "arquitetura_escolhida": "A",
+  "registros": {
+    "linhas_recebidas": 346702,
+    "registros_capital": 346702,
+    "registros_2025_antes_deduplicacao": 340059,
+    "boletins_ambiguos_removidos": 68,
+    "boletins_unicos_apos_filtros": 339923,
+    "total_da_amostra": 15000,
+    "furtos_na_amostra": 10796,
+    "roubos_na_amostra": 4204,
+    "periodo_nao_informado_na_amostra": 8623
+  },
+  "conjuntos": {
+    "treino": 10500,
+    "validacao": 2250,
+    "teste": 2250
+  },
+  "limiar_decisao": 0.34,
+  "referencia_sempre_furto": {
+    "acuracia_validacao": 0.7195555555555555,
+    "acuracia_teste": 0.72
+  },
+  "metricas_teste": {
+    "acuracia": 0.688,
+    "precision": 0.46715328467153283,
+    "recall": 0.8126984126984127,
+    "f1_score": 0.593279258400927
+  },
+  "metricas_teste_limiar_0_5": {
+    "acuracia": 0.7271111111111112,
+    "precision": 0.523121387283237,
+    "recall": 0.2873015873015873,
+    "f1_score": 0.3709016393442623
+  },
+  "observacao": "Classifica um registro; não prevê risco de crime futuro."
+}
